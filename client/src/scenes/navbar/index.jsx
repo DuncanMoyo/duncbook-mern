@@ -56,7 +56,7 @@ const Navbar = () => {
             },
           }}
         >
-          Dunc-book
+          Duncbook
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
