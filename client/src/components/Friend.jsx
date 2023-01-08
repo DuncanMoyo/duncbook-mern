@@ -12,7 +12,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
   const { _id } = useSelector((state) => state.user);
   const token = useSelector((state) => state.token);
   const friends = useSelector((state) => state.user.friends);
-  console.log('FRIENDS',friends);
+  // console.log('FRIENDS',friends);
   const { palette } = useTheme();
   const primaryLight = palette.primary.light;
   const primaryDark = palette.primary.dark;
@@ -20,7 +20,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
   const medium = palette.neutral.medium;  
 
   const baseUrl = process.env.REACT_APP_BASE_URL
-  console.log("🚀 ~ file: Friend.jsx:23 ~ Friend ~ baseUrl", baseUrl)
+  // console.log("🚀 ~ file: Friend.jsx:23 ~ Friend ~ baseUrl", baseUrl)
 
   const isFriend =Array.isArray(friends) ? friends.find((friend) => friend._id === friendId) : null;
 

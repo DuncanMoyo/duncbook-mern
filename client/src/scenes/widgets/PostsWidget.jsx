@@ -8,7 +8,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
   const posts = useSelector((state) => state.posts);
 
   const reversedPosts = [...posts].reverse()
-  console.log("🚀 ~ file: PostsWidget.jsx:11 ~ PostsWidget ~ reversedPosts", reversedPosts)
+  // console.log("🚀 ~ file: PostsWidget.jsx:11 ~ PostsWidget ~ reversedPosts", reversedPosts)
   const token = useSelector((state) => state.token);
 
   const baseUrl = process.env.REACT_APP_BASE_URL
